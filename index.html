@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Catálogo de Perfumes</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- MENU SUPERIOR -->
+
+<nav class="menu">
+
+<div class="logo-menu">
+<img src="logo.jpeg" alt="Logo Perfumes">
+</div>
+
+<div class="menu-links">
+
+<a href="#" onclick="mostrar('inicio')">Inicio</a>
+<a href="#" onclick="mostrar('hombre')">Aromas de Hombre</a>
+<a href="#" onclick="mostrar('mujer')">Aromas de Mujer</a>
+<a href="#" onclick="mostrar('precios')">Tamaños y Precios</a>
+<a href="#" onclick="mostrar('ubicaciones')">Ubicaciones</a>
+
+</div>
+
+</nav>
+
+<nav class="menu">
+
+<div class="logo-menu">
+<img src="logo.jpeg" alt="Logo Perfumes">
+</div>
+
+<div class="menu-links">
+
+<a href="#" onclick="mostrar('inicio')">Inicio</a>
+<a href="#" onclick="mostrar('hombre')">Aromas de Hombre</a>
+<a href="#" onclick="mostrar('mujer')">Aromas de Mujer</a>
+<a href="#" onclick="mostrar('precios')">Tamaños y Precios</a>
+<a href="#" onclick="mostrar('ubicaciones')">Ubicaciones</a>
+
+</div>
+
+</nav>
+
+
+<!-- HEADER -->
+
+<header id="headerCatalogo">
+
+<h1>Catálogo de Perfumes</h1>
+
+<input type="text" id="searchInput" placeholder="Buscar perfume...">
+
+</header>
+
+<!-- SECCION BIENVENIDA -->
+<section id="inicio" class="pantalla">
+
+<div class="hero">
+
+
+<div class="texto-bienvenida">
+
+<h1>Bienvenid@</h1>
+
+<p>Explora y descubre nuestros aromas exclusivos</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SECCION HOMBRE -->
+
+<section id="hombre" class="pantalla">
+
+<h2>Aromas de Hombre</h2>
+
+<div id="hombreLista" class="lista-productos"></div>
+
+</section>
+
+
+<!-- SECCION MUJER -->
+
+<section id="mujer" class="pantalla">
+
+<h2>Aromas de Mujer</h2>
+
+<div id="mujerLista" class="lista-productos"></div>
+
+</section>
+
+
+<!-- SECCION PRECIOS -->
+
+<section id="precios" class="pantalla">
+
+<h2>Tamaños y Precios</h2>
+
+<div class="imagen-precios">
+
+<img src="precios.jpeg" alt="Tabla de tamaños y precios">
+
+</div>
+
+</section>
+
+
+<!-- SECCION SUCURSALES -->
+
+<section id="ubicaciones" class="pantalla">
+
+<h2>Nuestras Sucursales</h2>
+
+<div class="contenedor-sucursales">
+
+
+<!-- Sucursal 1 -->
+
+<div class="sucursal">
+
+<h3>Sucursal Centro</h3>
+
+<iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.246032193177!2d-99.1472192!3d19.4449564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8d826912b5f%3A0x26349eb35e8eb917!2sLA%20CASA%20DEL%20PERFUME!5e0!3m2!1ses!2smx!4v1773180909924!5m2!1ses!2smx"
+allowfullscreen
+loading="lazy">
+</iframe>
+
+<a href="https://maps.google.com/?q=19.4449564,-99.1472192" target="_blank">
+
+<button class="btn-mapa">
+Cómo llegar
+</button>
+
+</a>
+
+</div>
+
+
+<!-- Sucursal 2 -->
+
+<div class="sucursal">
+
+<h3>Sucursal Norte</h3>
+
+<iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3757.4873304946345!2d-99.0969925!3d19.6492038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f38b6bf33677%3A0xb92faed54c05c258!2sLa%20casa%20del%20perfume!5e0!3m2!1ses!2smx!4v1773181014508!5m2!1ses!2smx"
+allowfullscreen
+loading="lazy">
+</iframe>
+
+<a href="https://maps.google.com/?q=19.6492038,-99.0969925" target="_blank">
+
+<button class="btn-mapa">
+Cómo llegar
+</button>
+
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+© 2026 Catálogo de Perfumes
+
+</footer>
+
+
+<!-- BOTON WHATSAPP -->
+
+<a
+href="https://wa.me/5215568800259"
+class="whatsapp-float"
+target="_blank">
+
+💬
+
+</a>
+
+
+<!-- JAVASCRIPT -->
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,403 @@
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* ANIMACION ENTRADA */
+
+@keyframes fadeEntrada{
+
+0%{
+opacity:0;
+transform:translateY(30px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* ANIMACION LOGO */
+
+@keyframes logoAnim{
+
+0%{
+transform:scale(0.6);
+opacity:0;
+}
+
+60%{
+transform:scale(1.1);
+}
+
+100%{
+transform:scale(1);
+opacity:1;
+}
+
+}
+
+/* BODY */
+
+body{
+
+font-family:Arial, sans-serif;
+
+background:linear-gradient(
+180deg,
+#0f0f0f,
+#1a1a1a,
+#0a0a0a
+);
+
+color:white;
+line-height:1.5;
+
+background-attachment:fixed;
+
+}
+
+/* LOGO BORROSO DE FONDO */
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:url("logo.jpeg") center no-repeat;
+
+background-size:95%;
+
+filter:blur(8px) opacity(0.50);
+
+z-index:-1;
+
+}
+
+/* MENU ESTILO APPLE */
+
+.menu{
+
+position:fixed;
+top:0;
+width:100%;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:18px 50px;
+
+background:rgba(0,0,0,0.65);
+
+backdrop-filter:blur(12px);
+
+border-bottom:1px solid rgba(255,255,255,0.08);
+
+z-index:1000;
+
+}
+
+/* LOGO MENU */
+
+.logo-menu img{
+height:45px;
+}
+
+/* LINKS MENU */
+
+.menu-links{
+display:flex;
+gap:30px;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+font-weight:500;
+font-size:15px;
+transition:0.3s;
+}
+
+.menu a:hover{
+color:#25D366;
+}
+
+/* HEADER */
+
+header{
+margin-top:90px;
+text-align:center;
+padding:40px;
+background:rgba(5, 0, 0, 0.493);
+border-radius:10px;
+width:90%;
+margin-left:auto;
+margin-right:auto;
+}
+
+/* BUSCADOR */
+
+#searchInput{
+padding:10px;
+width:80%;
+max-width:400px;
+border-radius:8px;
+border:1px solid #ccc;
+font-size:16px;
+}
+
+/* TITULOS */
+
+h2{
+text-align:center;
+margin-top:30px;
+color:white;
+}
+
+/* PRODUCTOS */
+
+.lista-productos{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.producto{
+background:rgba(255,255,255,0.95);
+padding:15px;
+border-radius:10px;
+box-shadow:0 3px 8px rgba(0,0,0,0.1);
+text-align:center;
+transition:0.3s;
+color:black;
+}
+
+.producto:hover{
+transform:translateY(-5px);
+box-shadow:0 6px 12px rgba(0,0,0,0.15);
+}
+
+.producto h3{
+margin-bottom:10px;
+}
+
+.producto button{
+background:#25D366;
+color:white;
+border:none;
+padding:10px;
+width:100%;
+border-radius:6px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.producto button:hover{
+background:#1ebe5d;
+}
+
+/* PANTALLAS */
+
+.pantalla{
+display:none;
+padding-top:120px;
+animation:fadeEntrada 0.6s ease;
+}
+
+/* PANTALLA INICIAL */
+
+#inicio{
+display:block;
+}
+
+/* BIENVENIDA */
+
+.bienvenida{
+text-align:center;
+margin-top:160px;
+color:white;
+animation:fadeEntrada 1.5s ease;
+}
+
+.logo-grande{
+width:220px;
+margin-bottom:20px;
+animation:logoAnim 2s ease;
+}
+
+.bienvenida h1{
+font-size:40px;
+letter-spacing:2px;
+margin-bottom:10px;
+}
+
+.bienvenida p{
+font-size:18px;
+color:#cccccc;
+}
+
+/* PRECIOS CON IMAGEN */
+
+.imagen-precios{
+display:flex;
+justify-content:center;
+padding:30px;
+}
+
+.imagen-precios img{
+max-width:700px;
+width:90%;
+border-radius:12px;
+box-shadow:0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* SUCURSALES */
+
+.contenedor-sucursales{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.sucursal{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 3px 8px rgba(0,0,0,0.1);
+text-align:center;
+color:black;
+}
+
+.sucursal iframe{
+width:100%;
+height:300px;
+border:0;
+border-radius:10px;
+margin-top:10px;
+}
+
+.btn-mapa{
+margin-top:10px;
+background:#007BFF;
+color:white;
+border:none;
+padding:10px;
+border-radius:6px;
+cursor:pointer;
+width:100%;
+font-weight:bold;
+}
+
+.btn-mapa:hover{
+background:#0056b3;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:#111;
+color:white;
+margin-top:40px;
+}
+
+/* BOTON WHATSAPP */
+
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+font-size:28px;
+width:60px;
+height:60px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+text-decoration:none;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+.whatsapp-float:hover{
+transform:scale(1.1);
+}
+
+/* HERO BIENVENIDA */
+
+.hero{
+
+position:relative;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+height:100vh;
+
+overflow:hidden;
+
+}
+
+/* IMAGEN GRANDE */
+
+.imagen-bienvenida{
+
+width:100%;
+height:100%;
+
+object-fit:cover;
+
+filter:brightness(0.6);
+
+}
+
+/* TEXTO SOBRE LA IMAGEN */
+
+.texto-bienvenida{
+
+position:absolute;
+
+text-align:center;
+
+color:white;
+
+animation:fadeEntrada 1.5s ease;
+
+}
+
+.texto-bienvenida h1{
+
+font-size:55px;
+
+letter-spacing:3px;
+
+margin-bottom:10px;
+
+}
+
+.texto-bienvenida p{
+
+font-size:20px;
+
+color:#ddd;
+
+}

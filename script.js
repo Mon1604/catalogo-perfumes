@@ -234,7 +234,7 @@ Preguntar por WhatsApp
 
 function pedir(nombre){
 
-const numero = "5210000000000"
+const numero = "5215568800259"
 
 const mensaje = `Hola, me interesa el perfume ${nombre}. ¿Me puedes dar información?`
 
@@ -291,4 +291,5 @@ header.style.display = "block"
 
 }
 mostrar("inicio")
+
 }

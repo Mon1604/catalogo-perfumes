@@ -286,12 +286,11 @@ document.getElementById(id).style.display="block"
 
 let header = document.getElementById("headerCatalogo")
 
-if(id === "inicio"){
-header.style.display = "none"
-}else{
+if(id === "hombre" || id === "mujer"){
 header.style.display = "block"
+}else{
+header.style.display = "none"
 }
-
 /* CAMBIAR COLOR DE FONDO */
 
 document.body.classList.remove("fondo-mujer","fondo-hombre","fondo-normal")

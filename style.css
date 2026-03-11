@@ -465,24 +465,17 @@ font-size:14px;
 height:40px;
 
 }
+
 /* FONDO MUJER */
 
 body.fondo-mujer{
-
-background:
-linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
-#ffd6e7;
-
+background:#ffd6e7;
 }
 
 /* FONDO HOMBRE */
 
 body.fondo-hombre{
-
-background:
-linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
-#d6e8ff;
-
+background:#d6e8ff;
 }
 
 /* FONDO NORMAL */
@@ -499,5 +492,4 @@ background-position:center;
 background-attachment:fixed;
 
 }
-
 }

@@ -271,6 +271,7 @@ mostrarPerfumes(hombre,"hombreLista")
 mostrarPerfumes(mujer,"mujerLista")
 
 })
+
 function mostrar(id){
 
 let pantallas = document.querySelectorAll(".pantalla")
@@ -281,6 +282,8 @@ p.style.display="none"
 
 document.getElementById(id).style.display="block"
 
+/* mostrar u ocultar catalogo */
+
 let header = document.getElementById("headerCatalogo")
 
 if(id === "inicio"){
@@ -289,7 +292,22 @@ header.style.display = "none"
 header.style.display = "block"
 }
 
+/* CAMBIAR COLOR DE FONDO */
+
+document.body.classList.remove("fondo-mujer","fondo-hombre","fondo-normal")
+
+if(id === "mujer"){
+document.body.classList.add("fondo-mujer")
 }
+else if(id === "hombre"){
+document.body.classList.add("fondo-hombre")
+}
+else{
+document.body.classList.add("fondo-normal")
+}
+
+}
+
 mostrar("inicio")
 
 }
